@@ -1,0 +1,14 @@
+<select
+        class="form-control"
+        name="{{ field_type.input_name }}"
+        {{ field_type.required ? 'required' }}>
+
+    {% if not field_type.required %}
+        <option>{{ trans(field_type.placeholder) }}</option>
+    {% endif %}
+
+    {% for id, name in field_type.options %}
+        <option value="{{ id }}" {{ id == field_type.value ? 'selected' }}>{{ trans(name) }}</option>
+    {% endfor %}
+
+</select>
