@@ -1,0 +1,95 @@
+/**
+ * Social Field Type
+ * 
+ * Override styles from chosen.css to correct images location and change styles to match PyroCMS
+ * 
+ * @author     Web Semantics, Inc. Dev Team <info@websemantics.ca>
+ * @copyright  2011-2015 Web Semantics, Inc.
+ * @link       http://websemantics.ca
+ * @license    https://opensource.org/licenses/MIT 
+ */
+
+.chosen-container-single .chosen-single {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 7px 0 0 8px;
+  height: 42px;
+}
+
+.chosen-container-single .chosen-single {
+    border: 2px solid #BDC3C7;
+    border-radius: 5px;
+    background: none;
+    width:100%;
+}
+
+.chosen-container {
+  width:100%!important;
+}
+
+.chosen-container-active .chosen-single {
+  border: 2px solid #BDC3C7;
+  box-shadow: none;
+}
+
+.chosen-container-single .chosen-search input[type="text"] {
+  border: 1px solid #BDC3C7;
+}
+
+
+.chosen-container-active.chosen-with-drop .chosen-single {
+  border: 2px solid #BDC3C7;
+  border-bottom-color: white;
+  background-image: none;
+  box-shadow: none;
+}
+
+.chosen-container .chosen-drop {
+  border: 2px solid #BDC3C7;
+  border-top: 0;
+  box-shadow: none;
+}
+
+.chosen-container .chosen-results li.highlighted {
+  background-color: #3875d7;
+  background-image: none;
+  background-color: #BDC3C7;
+  color: #fff;
+}
+
+.chosen-container-single .chosen-single div {
+    padding: 7px 3px 0px 0px;
+    width: 16px;
+}
+
+.chosen-container-single .chosen-single abbr {
+  background: url('../../../{{ asset_path("websemantics.field_type.social::js/libraries/chosen/chosen-sprite.png") }}') -42px 1px no-repeat;
+}
+
+.chosen-container-single .chosen-single div b {
+  background: url('../../../{{ asset_path("websemantics.field_type.social::js/libraries/chosen/chosen-sprite.png") }}') no-repeat 0px 2px;
+}
+.chosen-container-single .chosen-search input[type="text"] {
+  background: white url('../../../{{ asset_path("websemantics.field_type.social::js/libraries/chosen/chosen-sprite.png") }}') no-repeat 100% -20px;
+  background: url('../../../{{ asset_path("websemantics.field_type.social::js/libraries/chosen/chosen-sprite.png") }}') no-repeat 100% -20px;
+}
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+  background: url('../../../{{ asset_path("websemantics.field_type.social::js/libraries/chosen/chosen-sprite.png") }}') -42px 1px no-repeat;
+}
+.chosen-rtl .chosen-search input[type="text"] {
+  background: white url('../../../{{ asset_path("websemantics.field_type.social::js/libraries/chosen/chosen-sprite.png") }}') no-repeat -30px -20px;
+  background: url('../../../{{ asset_path("websemantics.field_type.social::js/libraries/chosen/chosen-sprite.png") }}') no-repeat -30px -20px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+  .chosen-rtl .chosen-search input[type="text"],
+  .chosen-container-single .chosen-single abbr,
+  .chosen-container-single .chosen-single div b,
+  .chosen-container-single .chosen-search input[type="text"],
+  .chosen-container-multi .chosen-choices .search-choice .search-choice-close,
+  .chosen-container .chosen-results-scroll-down span,
+  .chosen-container .chosen-results-scroll-up span {
+    background-image: url('../../../{{ asset_path("websemantics.field_type.social::js/libraries/chosen/chosen-sprite@2x.png") }}') !important;
+  }
+}

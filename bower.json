@@ -1,0 +1,24 @@
+{
+  "name": "Social Field Type",
+  "version": "0.1",
+  "homepage": "https://github.com/websemantics",
+  "authors": [
+    "Web Semantics, Inc. <hi@websemantics.ca>"
+  ],
+  "description": "The social field type provides a dropdown input of social netwroks",
+  "main": "resources/js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "migrations",
+    "src",
+    "vendor",
+    "resources/config",
+    "resources/lang",
+    "resources/views",
+    "resources/js/libraries"
+  ],
+  "dependencies": {
+    "image-select" : "*"
+  }
+}

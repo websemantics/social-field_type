@@ -100,5 +100,5 @@ return [
     'yahoo' => 'Yahoo!',
     'yahoochat' => 'Yahoo! Chat',
     'yelp' => 'Yelp',
-    'youtube' => 'YouTube', ]
+    'youtube' => 'YouTube',
 ];

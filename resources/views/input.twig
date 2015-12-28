@@ -1,5 +1,12 @@
-<select
-        class="form-control"
+{{asset_add('styles.css','websemantics.field_type.social::js/libraries/image-select/dist/ImageSelect.css')}}
+{{asset_add('styles.css','websemantics.field_type.social::js/libraries/chosen/chosen.min.css')}}
+{{asset_add('styles.css','websemantics.field_type.social::css/styles.css')}}
+
+{{asset_add('scripts.js','websemantics.field_type.social::js/input.js')}}
+{{asset_add('scripts.js','websemantics.field_type.social::js/libraries/chosen/chosen.jquery.min.js')}}
+{{asset_add('scripts.js','websemantics.field_type.social::js/libraries/image-select/dist/ImageSelect.jquery.js')}}
+
+<select class="my-select"
         name="{{ field_type.input_name }}"
         {{ field_type.required ? 'required' }}>
 
@@ -8,7 +15,8 @@
     {% endif %}
 
     {% for id, name in field_type.options %}
-        <option value="{{ id }}" {{ id == field_type.value ? 'selected' }}>{{ trans(name) }}</option>
+    	{% set image = "websemantics.field_type.social::img/social/" ~ id ~ ".png" %}
+        <option value="{{ id }}" data-img-src='{{image_url(image)}}' {{ id == field_type.value ? 'selected' }}>{{ trans(name) }}</option>
     {% endfor %}
 
 </select>
