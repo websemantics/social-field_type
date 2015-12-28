@@ -2,9 +2,9 @@
 
 The social field type provides a dropdown input of social netwroks.
 
-This field type is using [Image-Select](https://github.com/websemantics/Image-Select), a select widget with image support for Single and Multi select HTML tags.
-
 ![demo](https://raw.githubusercontent.com/websemantics/social-field_type/master/resources/img/social-field-type.gif)
+
+This field type is using [Image-Select](https://github.com/websemantics/Image-Select), a select widget with image support for Single and Multi select HTML tags.
 
 ## Introduction
 
